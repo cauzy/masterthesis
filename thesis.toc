@@ -1,0 +1,41 @@
+\select@language {naustrian}
+\select@language {naustrian}
+\select@language {english}
+\select@language {naustrian}
+\select@language {naustrian}
+\select@language {naustrian}
+\select@language {english}
+\select@language {naustrian}
+\select@language {naustrian}
+\contentsline {chapter}{Kurzfassung}{xi}{chapter*.4}
+\select@language {naustrian}
+\select@language {english}
+\contentsline {chapter}{Abstract}{xiii}{chapter*.5}
+\select@language {naustrian}
+\select@language {english}
+\contentsline {chapter}{Contents}{xv}{section*.6}
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\chapternumberline {2}Goals}{3}{chapter.2}
+\contentsline {chapter}{\chapternumberline {3}Theoretical Foundation}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Power Quality Monitoring}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Cloud Computing}{5}{section.3.2}
+\contentsline {section}{\numberline {3.3}Internet of Things}{5}{section.3.3}
+\contentsline {chapter}{\chapternumberline {4}System Design}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Requirements}{7}{section.4.1}
+\contentsline {section}{\numberline {4.2}Architecture}{7}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}System Overview}{7}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Hardware Architecture}{7}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Software Architecture}{7}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Network Architecture}{7}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}Security Aspects / Threat-Modeling}{7}{section.4.3}
+\contentsline {chapter}{\chapternumberline {5}Simulation}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}Tools}{9}{section.5.1}
+\contentsline {section}{\numberline {5.2}Important Points to consider}{9}{section.5.2}
+\contentsline {section}{\numberline {5.3}Evaluation}{9}{section.5.3}
+\contentsline {section}{\numberline {5.4}Impact on System Design}{9}{section.5.4}
+\contentsline {chapter}{\chapternumberline {6}Implementation}{11}{chapter.6}
+\contentsline {chapter}{\chapternumberline {7}Evaluation}{13}{chapter.7}
+\contentsline {chapter}{List of Figures}{15}{section*.7}
+\contentsline {chapter}{List of Tables}{15}{section*.8}
+\contentsline {chapter}{List of Algorithms}{17}{chapter*.9}
+\contentsline {chapter}{Bibliography}{19}{section*.11}
