@@ -22,10 +22,46 @@
 \usepackage{nag}       % Issues warnings when best practices in writing LaTeX documents are violated.
 \usepackage{hyperref}  % Enables cross linking in the electronic document version. This package has to be included second to last.
 \usepackage[acronym,toc]{glossaries} % Enables the generation of glossaries and lists fo acronyms. This package has to be included last.
+\usepackage{listings}
 
 % Define convenience functions to use the author name and the thesis title in the PDF document properties.
 \newcommand{\authorname}{Martin Gebhard Jenny} % The author name without titles.
 \newcommand{\thesistitle}{Cloud Based Distributed Data Acquisition} % The title of the thesis. The English version should be used, if it exists.
+
+%defines for lstlisting
+\usepackage{color}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+\definecolor{maroon}{rgb}{0.5,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  showstringspaces=false,
+  commentstyle=\color{darkgreen}\upshape
+}
+
+\lstdefinelanguage{XML}
+{
+  basicstyle=\ttfamily,
+  morestring=[s]{"}{"},
+  morecomment=[s]{?}{?},
+  morecomment=[s]{!--}{--},
+  commentstyle=\color{darkgreen},
+  moredelim=[s][\color{black}]{>}{<},
+  moredelim=[s][\color{red}]{\ }{=},
+  stringstyle=\color{blue},
+  identifierstyle=\color{maroon}
+}
+
+\lstdefinelanguage{http}
+{
+  basicstyle=\ttfamily,
+  stringstyle=\color{black},
+  identifierstyle=\color{black}
+}
 
 % Set PDF document properties
 \hypersetup{
@@ -176,7 +212,7 @@
 \printglossaries
 
 % Add a bibliography.
-\bibliographystyle{alpha}
+\bibliographystyle{unsrt}
 \bibliography{intro}
 
 \end{document}

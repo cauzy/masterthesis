@@ -1,3 +1,85 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
+
+\bibitem{en50160}
+ÖVE/ÖNORM.
+\newblock {EN} 50160:2010 {M}erkmale der {S}pannung in öffentlichen
+  {E}lektrizitätsversorgungsnetzen, 3 2011.
+
+\bibitem{iec61000}
+ÖVE/ÖNORM.
+\newblock {IEC} 61000-4-30:2009 {E}lektromagnetische {V}erträglichkeit ({EMV})
+  {T}eil 4-30: {P}rüf- und {M}essverfahren - {V}erfahren zur {M}essung der
+  {S}pannungsqualität, 11 2009.
+
+\bibitem{sig_proc}
+Sophocles Orfanidis.
+\newblock {\em Introduction to Signal Processing}.
+\newblock Prentice Hall, 1995.
+
+\bibitem{sampling}
+A.M. Wyglinski, A.M.W. Di~Pu, and D.~Pu.
+\newblock {\em Digital Communication Systems Engineering with Software-Defined
+  Radio}.
+\newblock Artech House Publishers, 2013.
+
+\bibitem{fourier}
+D.~Sundararajan.
+\newblock {\em The Discrete Fourier Transform: Theory, Algorithms and
+  Applications}.
+\newblock World Scientific Publishing Company, Incorporated, 2001.
+
+\bibitem{cooley_tukey}
+MobileReference.
+\newblock {\em Signal Processing Quick Study Guide for Smartphones and Mobile
+  Devices}.
+\newblock Mobi Study Guides. MobileReference, 2007.
+
+\bibitem{signalverarbeitung}
+M.~Meyer.
+\newblock {\em Signalverarbeitung: Analoge und digitale Signale, Systeme und
+  Filter}.
+\newblock Springer Science+Business Media, 2006.
+
+\bibitem{dcf77}
+D.~Engeler.
+\newblock {Performance analysis and receiver architectures of DCF77
+  radio-controlled clocks}.
+\newblock {\em Ultrasonics, Ferroelectrics and Frequency Control, IEEE
+  Transactions on}, 59(5):869--884, May 2012.
+
+\bibitem{dcf77_2}
+Dirk Piester, Peter Hetzel, and Andreas Bauch.
+\newblock {Zeit- und Normalfrequenzverbreitung mit DCF77}.
+\newblock In {\em PTB-Mitteilungen vol. 114 (Heft 4)}, pages 345--368, 2004.
+
+\bibitem{dcf77_3}
+{B. Rega}.
+\newblock {Genauigkeitsvergleich DCF77 und GPS}.
+\newblock \url{http://www.hopf.com/de/dcf77-gps_de.html}.
+\newblock {Online; accessed 07-May-2014}.
+
+\bibitem{irig}
+{Secretariat of Range Commanders Council, U.S. Army White Sands Missile Range}.
+\newblock {IRIG Standard 200-04: IRIG Serial Time Code Formats}, 2004.
+
+\bibitem{gps}
+{Department of Defense, United States of America}.
+\newblock {Global Positioning System Standard Positioning Service Performance
+  Standard 4th Edition}, September 2008.
+
+\bibitem{nmea}
+{National Marine Electronics Association}.
+\newblock {NMEA 0183, Standard For Interfacing Marine Electronic Devices,
+  Version 3.01}, January 2002.
+
+\bibitem{sntp}
+S.~Johannessen.
+\newblock Time synchronization in a local area network.
+\newblock {\em Control Systems, IEEE}, 24(2):61--69, Apr 2004.
+
+\bibitem{rfc5905}
+D.~Mills, U.~Delaware, J~Martin, J.~Burbank, and W.~Kasch.
+\newblock {{RFC 5905: Network Time Protocol Version 4: Protocol and Algorithms
+  Specification - Internet Engineering Task Force (IETF)}}, June 2010.
 
 \end{thebibliography}
