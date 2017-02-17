@@ -64,7 +64,7 @@ where $i$ is the current Bin-index. Therefore, the output of the FFT has a limit
 
 \[ n = 2, R = 20000 Hz \]
 \[ \Delta f = f_{n} - f_{n-1} = f_{2} - f_{1} \]
-\[ \Delta f = \frac{R}{N} \cdot 2 - \frac{R}{N} \cdot 1} = \frac{2 \cdot R - 1 \cdot R}{N} = \frac{R}{N} \]
+\[ \Delta f = \frac{R}{N} \cdot 2 - \frac{R}{N} \cdot 1 = \frac{2 \cdot R - 1 \cdot R}{N} = \frac{R}{N} \]
 \[ \Rightarrow N = \frac{R}{\Delta f} = \frac{20000 Hz}{0.5 Hz} = 40000 \]
 
 When looking at the recursive algorithm, it can be seen that the algorithm works efficiently when $N$ is a power of two. Hence we take the next greater power of two for $N$. $N = 2^{16} = 65536$, which results in a resolution $\Delta f = $ 0.305 Hz.
@@ -114,5 +114,79 @@ private void CalculateFFT(ref Complex[] signal)
 \todo{better colors}
 
 \section{Cloud Computing}
+
+\epigraph{''I don’t need a hard disk in my computer if I can get to the server faster\dots \\ carrying around these non-connected computers is byzantine by comparison.''}{--- \textup{Steve Jobs}, former Apple CEO}
+
+\subsection{Cloud Characteristics}
+The essential characteristics of cloud computing are as follows\cite{cloud_characteristics}\cite{nist}:
+
+\subsubsection{On-demand self-service}
+Allows users of the cloud to consume capabilities from it. Common capabilities are network storage, server time or applications. The big difference compared to other computing models is, that the capabilities can be consumed as needed without complex interaction with the cloud provider. 
+
+\subsubsection{Broad network access}
+All of the capabilities can be accessed over the network by standard mechanisms. Furthermore, thin and thick client platforms are supported (from mobile devices up to workstations).
+
+\subsubsection{Resource pooling}
+The cloud provider's resources are pooled together to serve multiple consumers. End users of the cloud mostly need not to know the location of the data center hosting the cloud environment (often users can choose the country or a certain datacenter). The different physical and virtual resources are assigned and reassigned dynamically on demand.
+
+\subsubsection{Rapid elasticity}
+For rapid elasticity and scalability, the provisioned capability can be automatically scaled up and down. For the end users, capabilities are often presented as unlimited.
+
+\subsubsection{Measured service}
+For billing purposes and transparency for both the cloud provider ant the end user, measuring capabilities are applied. Furthermore, automatic control and optimization of the resources are performed based on this measures.
+
+\subsection{Service Models}
+By definition, the cloud system can be divided into the following three service models\cite{nist}:
+
+\subsubsection{Software as a Service (SaaS)}
+Software is provided to the users within the cloud infrastructure. To use the software, the services provided by the cloud can be accessed by either a web interface or is integrated into software installed locally. The advantage of this service model is, that the users consuming the services of the cloud rely on the underlying hardware (physical servers or network interfaces) and software (operating systems or databases)\cite{nist}.
+		
+Examples: Google Mail, Google Docs\cite{trustedcloudcomputing}.
+
+\subsubsection{Platform as a Service (PaaS)}
+Software created by users can be deployed to the cloud. For this, the cloud provides libraries, services and tools to support the users by developing a software with a programming language supported by the cloud. Like before, the underlying hard- and software is maintained by the cloud operator\cite{nist}.
+	
+Examples: Google App Engine, Windows Azure\cite{trustedcloudcomputing}. 
+
+\subsubsection{Infrastructure as a Service (IaaS)}
+The users can consume computational power from the cloud. This includes the use of servers and operating systems, storage solutions, networking resources or additional capabilities like processing power. Again, the underlying hard- and software is maintained by the cloud operator\cite{nist}.
+	
+Examples: Amazon Elastic Compute Cloud (EC2), Amazon Simple Storage Service (S3)\cite{trustedcloudcomputing}.
+
+Figure \ref{fig:cloud_stack} shows the three main service models and the responsible entities for the involved services.
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=0.8\textwidth]{graphics/service_models.eps}
+	\caption{Service models\cite{trustedcloudcomputing}}
+	\label{fig:cloud_stack}
+\end{figure}
+
+\todo{\url{https://blogs.technet.microsoft.com/yungchou/2010/11/15/cloud-computing-primer-for-it-pros/}}
+
+
+Furthermore, the following subset of service models can be derived from the Everything as a Service (XaaS) aspect:
+
+\subsubsection{Data Storage as a Service (DaaS)}
+DaaS can be seen as enhancement of IaaS. The main idea behind this model is to provide storage solutions to users. Often supported services are databases (RDBMS or other types) and file storage.
+		
+Example: Amazon Simple Storage Service (S3)\cite{issues}.
+
+\subsubsection{Human as a Service (HuaaS)}
+Services, that rely on information generated by a crowd of people. Human intelligence is used to fulfill tasks that are provided as a service to the users. Persons in the crowd use their tools, skills or knowledge to solve a task or a small subset of a task. The cloud systems aggregates the single results and provide as a service to the users.
+	
+Example: Amazon Mechanical Turk\cite{huaas}.
+
+\subsubsection{Other models}
+Since there is no strict separation between the stated service models, there exist various combination and modifications of them. The following listing shows some additional classification \cite{cloud_characteristics}.
+\begin{itemize}
+	\item Database-as-a-Service
+	\item Security-as-a-Service
+	\item Communication-as-a-Service
+	\item Management/Governance-as-a-Service
+	\item Integration-as-a-Service
+	\item Testing-as-a-Service
+	\item Business Process-as-a-Service
+\end{itemize}
 
 \section{Internet of Things}

@@ -40,6 +40,38 @@ M.~Meyer.
   Filter}.
 \newblock Springer Science+Business Media, 2006.
 
+\bibitem{cloud_characteristics}
+Zaigham Mahmood.
+\newblock {Cloud Computing: Characteristics and Deployment Approaches}.
+\newblock In {\em Computer and Information Technology (CIT), 2011 IEEE 11th
+  International Conference on}, pages 121--126, Aug 2011.
+
+\bibitem{nist}
+Peter Mell and Timothy Grance.
+\newblock The {NIST} definition of cloud computing.
+\newblock {\em National Institute of Standards and Technology (NIST),
+  Information Technology Laboratory}, NIST Special Publication 800-145,
+  September 2011.
+\newblock {\url{http://www.csrc.nist.gov}, Online, accessed 24-April-2014}.
+
+\bibitem{trustedcloudcomputing}
+Kai Hwang and Deyi Li.
+\newblock Trusted cloud computing with secure resources and data coloring.
+\newblock {\em IEEE Internet Computing}, 14(5):14--22, September 2010.
+
+\bibitem{issues}
+T.~Dillon, Chen Wu, and E.~Chang.
+\newblock {Cloud Computing: Issues and Challenges}.
+\newblock In {\em Advanced Information Networking and Applications (AINA), 2010
+  24th IEEE International Conference on}, pages 27--33, April 2010.
+
+\bibitem{huaas}
+A.~Lenk, M.~Klems, J.~Nimis, S.~Tai, and T.~Sandholm.
+\newblock {What's inside the Cloud? An architectural map of the Cloud
+  landscape}.
+\newblock In {\em Software Engineering Challenges of Cloud Computing, 2009.
+  CLOUD '09. ICSE Workshop on}, pages 23--31, May 2009.
+
 \bibitem{dcf77}
 D.~Engeler.
 \newblock {Performance analysis and receiver architectures of DCF77
