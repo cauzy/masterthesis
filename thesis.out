@@ -7,21 +7,22 @@
 \BOOKMARK [1][-]{section.3.1}{Power Quality Monitoring}{chapter.3}% 7
 \BOOKMARK [1][-]{section.3.2}{Cloud Computing}{chapter.3}% 8
 \BOOKMARK [1][-]{section.3.3}{Internet of Things}{chapter.3}% 9
-\BOOKMARK [0][-]{chapter.4}{System Design}{}% 10
-\BOOKMARK [1][-]{section.4.1}{Requirements}{chapter.4}% 11
-\BOOKMARK [1][-]{section.4.2}{System Overview}{chapter.4}% 12
-\BOOKMARK [1][-]{section.4.3}{Hardware Architecture}{chapter.4}% 13
-\BOOKMARK [1][-]{section.4.4}{Software Architecture}{chapter.4}% 14
-\BOOKMARK [1][-]{section.4.5}{Network Architecture}{chapter.4}% 15
-\BOOKMARK [1][-]{section.4.6}{Security Aspects / Threat-Modeling}{chapter.4}% 16
-\BOOKMARK [0][-]{chapter.5}{Simulation}{}% 17
-\BOOKMARK [1][-]{section.5.1}{Tools}{chapter.5}% 18
-\BOOKMARK [1][-]{section.5.2}{Important Points to consider}{chapter.5}% 19
-\BOOKMARK [1][-]{section.5.3}{Evaluation}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.4}{Impact on System Design}{chapter.5}% 21
-\BOOKMARK [0][-]{chapter.6}{Implementation}{}% 22
-\BOOKMARK [0][-]{chapter.7}{Evaluation}{}% 23
-\BOOKMARK [0][-]{section*.27}{List of Figures}{}% 24
-\BOOKMARK [0][-]{section*.28}{List of Tables}{}% 25
-\BOOKMARK [0][-]{chapter*.29}{List of Algorithms}{}% 26
-\BOOKMARK [0][-]{section*.31}{Bibliography}{}% 27
+\BOOKMARK [1][-]{section.3.4}{IoT}{chapter.3}% 10
+\BOOKMARK [0][-]{chapter.4}{System Design}{}% 11
+\BOOKMARK [1][-]{section.4.1}{Requirements}{chapter.4}% 12
+\BOOKMARK [1][-]{section.4.2}{System Overview}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.3}{Hardware Architecture}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.4}{Software Architecture}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.5}{Network Architecture}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.6}{Security Aspects / Threat-Modeling}{chapter.4}% 17
+\BOOKMARK [0][-]{chapter.5}{Simulation}{}% 18
+\BOOKMARK [1][-]{section.5.1}{Tools}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.2}{Important Points to consider}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.3}{Evaluation}{chapter.5}% 21
+\BOOKMARK [1][-]{section.5.4}{Impact on System Design}{chapter.5}% 22
+\BOOKMARK [0][-]{chapter.6}{Implementation}{}% 23
+\BOOKMARK [0][-]{chapter.7}{Evaluation}{}% 24
+\BOOKMARK [0][-]{section*.32}{List of Figures}{}% 25
+\BOOKMARK [0][-]{section*.33}{List of Tables}{}% 26
+\BOOKMARK [0][-]{chapter*.34}{List of Algorithms}{}% 27
+\BOOKMARK [0][-]{section*.36}{Bibliography}{}% 28
