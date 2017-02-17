@@ -45,8 +45,8 @@
 \contentsline {subsubsection}{Layer 1: Physical thing}{13}{section*.23}
 \contentsline {subsubsection}{Layer 2: Sensor/Actuator}{13}{section*.24}
 \contentsline {subsubsection}{Layer 3: Connectivity}{13}{section*.25}
-\contentsline {subsubsection}{Layer 4: Analytics}{13}{section*.26}
-\contentsline {subsubsection}{Layer 5: Digital service}{13}{section*.27}
+\contentsline {subsubsection}{Layer 4: Analytics}{14}{section*.26}
+\contentsline {subsubsection}{Layer 5: Digital service}{14}{section*.27}
 \contentsline {chapter}{\chapternumberline {4}System Design}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Requirements}{15}{section.4.1}
 \contentsline {section}{\numberline {4.2}System Overview}{15}{section.4.2}

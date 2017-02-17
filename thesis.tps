@@ -12,13 +12,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1594
-NormalPos.bottom=675
+NormalPos.bottom=715
 Class=LaTeXView
 Document=thesis.tex
 
 [Frame0_View0,0]
-TopLine=186
-Cursor=7690
+TopLine=172
+Cursor=7639
 
 [Frame1]
 Flags=0
@@ -30,13 +30,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1594
-NormalPos.bottom=675
+NormalPos.bottom=715
 Class=LaTeXView
-Document=chapters\theo.tex
+Document=chapters\sysdesign.tex
 
 [Frame1_View0,0]
-TopLine=127
-Cursor=11019
+TopLine=0
+Cursor=55
 
 [Frame2]
 Flags=0
@@ -48,13 +48,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1594
-NormalPos.bottom=675
-Class=LaTeXView
-Document=chapters\sysdesign.tex
+NormalPos.bottom=715
+Class=BibTeXView
+Document=intro.bib
 
 [Frame2_View0,0]
-TopLine=41
-Cursor=6545
+TopLine=151
+Cursor=5810
 
 [Frame3]
 Flags=0
@@ -66,15 +66,15 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1594
-NormalPos.bottom=675
-Class=BibTeXView
-Document=intro.bib
+NormalPos.bottom=715
+Class=LaTeXView
+Document=chapters\theo.tex
 
 [Frame3_View0,0]
-TopLine=93
-Cursor=3138
+TopLine=226
+Cursor=16415
 
 [SessionInfo]
 FrameCount=4
-ActiveFrame=0
+ActiveFrame=3
 

@@ -72,6 +72,12 @@ A.~Lenk, M.~Klems, J.~Nimis, S.~Tai, and T.~Sandholm.
 \newblock In {\em Software Engineering Challenges of Cloud Computing, 2009.
   CLOUD '09. ICSE Workshop on}, pages 23--31, May 2009.
 
+\bibitem{iotfleisch}
+E.~Fleisch, M.~Weinberger, and F.~Wortmann.
+\newblock Business models and the internet of things.
+\newblock In {\em {Interoperability and Open-Source Solutions for the Internet
+  of Things}}, pages 6--10. Springer, 2015.
+
 \bibitem{dcf77}
 D.~Engeler.
 \newblock {Performance analysis and receiver architectures of DCF77

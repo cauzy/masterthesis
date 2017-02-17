@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=latex 2014.3.3)  17 FEB 2017 09:15
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=latex 2014.3.3)  17 FEB 2017 11:17
 entering extended mode
 **thesis.tex
 (D:\masterthesis\thesis.tex
@@ -1710,22 +1710,32 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 183.
- [12]) [13] [14
+ [12]
+Overfull \hbox (863.0894pt too wide) in paragraph at lines 195--199
+\T1/lmr/m/n/10.95 smart and con-nected [2, 18]. []\T1/lmr/bx/n/10.95 TODO: fur-ther in-tro[] [][][][]
+ []
 
-] (D:\masterthesis\chapters/sysdesign.tex
-[15] [16]) [17] [18
 
-] (D:\masterthesis\chapters/simulation.tex) [19] [20
+Overfull \hbox (251.88551pt too wide) in paragraph at lines 195--199
+[][][][] 
+ []
 
-] (D:\masterthesis\chapters/impl.tex) [21]
-[22
+[13]) [14] (D:\masterthesis\chapters/sysdesign.tex [15
+
+] [16]) [17] [18
+
+] (D:\masterthesis\chapters/simulation.tex)
+[19] [20
+
+] (D:\masterthesis\chapters/impl.tex) [21] [22
 
 ] (D:\masterthesis\chapters/eval.tex) [23] [24
 
-] (D:\masterthesis\thesis.lof) (D:\masterthesis\thesis.lot) [25]
-[26
+]
+(D:\masterthesis\thesis.lof) (D:\masterthesis\thesis.lot) [25] [26
 
-] (D:\masterthesis\thesis.loa) (D:\masterthesis\thesis.ind)
+] (D:\masterthesis\thesis.loa)
+(D:\masterthesis\thesis.ind)
 No file thesis.gls.
 No file thesis.acr.
 (D:\masterthesis\thesis.bbl [27] [28
@@ -1748,12 +1758,12 @@ Underfull \hbox (badness 2213) in paragraph at lines 50--56
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
+Underfull \hbox (badness 10000) in paragraph at lines 94--98
 []\T1/lmr/m/n/10.95 B. Rega.  Genauigkeitsver-gle-ich DCF77 und GPS.
  []
 
 
-Underfull \hbox (badness 2735) in paragraph at lines 88--92
+Underfull \hbox (badness 2735) in paragraph at lines 94--98
 [][][][]\T1/lmr/m/n/10.95 .  On-line; ac-cessed 07-
  []
 
@@ -1776,12 +1786,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 25206 strings out of 493922
- 405866 string characters out of 3147288
- 663314 words of memory out of 3000000
- 28011 multiletter control sequences out of 15000+200000
+ 25207 strings out of 493922
+ 405878 string characters out of 3147288
+ 663347 words of memory out of 3000000
+ 28012 multiletter control sequences out of 15000+200000
  111654 words of font info for 95 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,15n,94p,1941b,1966s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on thesis.dvi (46 pages, 117008 bytes).
+Output written on thesis.dvi (46 pages, 119864 bytes).
