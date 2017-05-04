@@ -29,7 +29,7 @@
 \contentsline {subsection}{\numberline {3.2.1}Cloud Characteristics}{10}{subsection.3.2.1}
 \contentsline {subsubsection}{On-demand self-service}{10}{section*.11}
 \contentsline {subsubsection}{Broad network access}{10}{section*.12}
-\contentsline {subsubsection}{Resource pooling}{10}{section*.13}
+\contentsline {subsubsection}{Resource pooling}{11}{section*.13}
 \contentsline {subsubsection}{Rapid elasticity}{11}{section*.14}
 \contentsline {subsubsection}{Measured service}{11}{section*.15}
 \contentsline {subsection}{\numberline {3.2.2}Service Models}{11}{subsection.3.2.2}
@@ -37,36 +37,38 @@
 \contentsline {subsubsection}{Platform as a Service (PaaS)}{11}{section*.17}
 \contentsline {subsubsection}{Infrastructure as a Service (IaaS)}{11}{section*.18}
 \contentsline {subsubsection}{Data Storage as a Service (DaaS)}{12}{section*.20}
-\contentsline {subsubsection}{Human as a Service (HuaaS)}{12}{section*.21}
-\contentsline {subsubsection}{Other models}{12}{section*.22}
+\contentsline {subsubsection}{Human as a Service (HuaaS)}{13}{section*.21}
+\contentsline {subsubsection}{Other models}{13}{section*.22}
 \contentsline {section}{\numberline {3.3}Internet of Things}{13}{section.3.3}
-\contentsline {section}{\numberline {3.4}IoT}{13}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Value Layers}{13}{subsection.3.4.1}
-\contentsline {subsubsection}{Layer 1: Physical thing}{13}{section*.23}
-\contentsline {subsubsection}{Layer 2: Sensor/Actuator}{13}{section*.24}
-\contentsline {subsubsection}{Layer 3: Connectivity}{13}{section*.25}
-\contentsline {subsubsection}{Layer 4: Analytics}{14}{section*.26}
-\contentsline {subsubsection}{Layer 5: Digital service}{14}{section*.27}
-\contentsline {chapter}{\chapternumberline {4}System Design}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Requirements}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}System Overview}{15}{section.4.2}
-\contentsline {section}{\numberline {4.3}Hardware Architecture}{15}{section.4.3}
-\contentsline {section}{\numberline {4.4}Software Architecture}{15}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Synchronization}{15}{subsection.4.4.1}
-\contentsline {subsubsection}{DCF77}{16}{section*.28}
-\contentsline {subsubsection}{GPS}{16}{section*.29}
-\contentsline {subsubsection}{SNTP}{17}{section*.30}
-\contentsline {subsubsection}{Conclusion}{17}{section*.31}
-\contentsline {section}{\numberline {4.5}Network Architecture}{17}{section.4.5}
-\contentsline {section}{\numberline {4.6}Security Aspects / Threat-Modeling}{17}{section.4.6}
-\contentsline {chapter}{\chapternumberline {5}Simulation}{19}{chapter.5}
-\contentsline {section}{\numberline {5.1}Tools}{19}{section.5.1}
-\contentsline {section}{\numberline {5.2}Important Points to consider}{19}{section.5.2}
-\contentsline {section}{\numberline {5.3}Evaluation}{19}{section.5.3}
-\contentsline {section}{\numberline {5.4}Impact on System Design}{19}{section.5.4}
-\contentsline {chapter}{\chapternumberline {6}Implementation}{21}{chapter.6}
-\contentsline {chapter}{\chapternumberline {7}Evaluation}{23}{chapter.7}
-\contentsline {chapter}{List of Figures}{25}{section*.32}
-\contentsline {chapter}{List of Tables}{25}{section*.33}
-\contentsline {chapter}{List of Algorithms}{27}{chapter*.34}
-\contentsline {chapter}{Bibliography}{29}{section*.36}
+\contentsline {subsection}{\numberline {3.3.1}Value-creation Layers}{14}{subsection.3.3.1}
+\contentsline {subsubsection}{Layer 1: Physical thing}{14}{section*.24}
+\contentsline {subsubsection}{Layer 2: Sensor/Actuator}{14}{section*.25}
+\contentsline {subsubsection}{Layer 3: Connectivity}{15}{section*.26}
+\contentsline {subsubsection}{Layer 4: Analytics}{15}{section*.27}
+\contentsline {subsubsection}{Layer 5: Digital service}{15}{section*.28}
+\contentsline {subsection}{\numberline {3.3.2}Comparision with 'Industrial Internet of Things'}{15}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Comparision with 'Industry 4.0'}{15}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Impact on this thesis}{15}{subsection.3.3.4}
+\contentsline {chapter}{\chapternumberline {4}System Design}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Requirements}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}System Overview}{17}{section.4.2}
+\contentsline {section}{\numberline {4.3}Hardware Architecture}{17}{section.4.3}
+\contentsline {section}{\numberline {4.4}Software Architecture}{17}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Synchronization}{17}{subsection.4.4.1}
+\contentsline {subsubsection}{DCF77}{18}{section*.29}
+\contentsline {subsubsection}{GPS}{18}{section*.30}
+\contentsline {subsubsection}{SNTP}{19}{section*.31}
+\contentsline {subsubsection}{Conclusion}{19}{section*.32}
+\contentsline {section}{\numberline {4.5}Network Architecture}{19}{section.4.5}
+\contentsline {section}{\numberline {4.6}Security Aspects / Threat-Modeling}{19}{section.4.6}
+\contentsline {chapter}{\chapternumberline {5}Simulation}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Tools}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Important Points to consider}{21}{section.5.2}
+\contentsline {section}{\numberline {5.3}Evaluation}{21}{section.5.3}
+\contentsline {section}{\numberline {5.4}Impact on System Design}{21}{section.5.4}
+\contentsline {chapter}{\chapternumberline {6}Implementation}{23}{chapter.6}
+\contentsline {chapter}{\chapternumberline {7}Evaluation}{25}{chapter.7}
+\contentsline {chapter}{List of Figures}{27}{section*.33}
+\contentsline {chapter}{List of Tables}{27}{section*.34}
+\contentsline {chapter}{List of Algorithms}{29}{chapter*.35}
+\contentsline {chapter}{Bibliography}{31}{section*.37}

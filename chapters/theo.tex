@@ -49,7 +49,6 @@ Beside having a efficient quantization resolution, choosing the right sample rat
 In the proposed scenario, we examine total harmonic distortion up to the $40^{th}$ order or harmonics. According to the standard, the maximal allowed frequency is 50 Hz + 1\% = 50.5 Hz. Therefore, the $40^{th}$ harmonic has a frequency of at most 2020 Hz. The signal is bandlimited by a lowpass filter to $B$ = 5000 Hz. According to the Nyquist sampling theorem, the sample frequency has to be set to at least $R > 2 \cdot B = 10000$ Hz. Hence, the sample frequency of the measurement device used to evaluate the scenario is set to 20000 Hz.
 
 \subsection{Transformation from Time- to Frequency Domain}
-\todo{better title}
 
 \label{fft}
 Since a great number of important characteristics of the power quality depends on measuring the frequency (and it's components) on a power line, the transformation form a signal recorded in the time domain to it's frequency parts shall be discussed.
@@ -74,8 +73,14 @@ For the sake of completeness, 'Window functions' have to be taken into account. 
 
 \[w[n] = 0.5 - 0.5 \cdot cos(\frac{2 \pi n}{N})\]
 
-\lstset{language=[Sharp]C, caption={Recursive Cooley-Tukey FFT algorithm}, label={cooley_tukey_impl}, numberstyle=\footnotesize,
-basicstyle=\ttfamily\footnotesize}
+A common implementation of the FFT algorithm is the recursive version of Cooley and Tukey. The complex signal input array is splitted in two arrays. One with the even indices, one with the odd indices. After that, the function is called again on this two arrays until the length of the input array is less or equal 1. After the recursion returns, the calculation of the frequency-domain data is made by appliying .... \todo{cite}
+
+\lstset{language=C++, caption={Recursive Cooley-Tukey FFT algorithm}, label={cooley_tukey_impl}, numberstyle=\footnotesize,
+								basicstyle=\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}\ttfamily,
+                morecomment=[l][\color{magenta}]{\#}}
 \begin{lstlisting}[frame=single]
 private void CalculateFFT(ref Complex[] signal)
 {
@@ -111,8 +116,7 @@ private void CalculateFFT(ref Complex[] signal)
 	}
 }
 \end{lstlisting}
-\todo{better colors}
-\todo{small introduction}
+\todo{cite}
 \section{Cloud Computing}
 
 \epigraph{''I don’t need a hard disk in my computer if I can get to the server faster\dots \\ carrying around these non-connected computers is byzantine by comparison.''}{--- \textup{Steve Jobs}, former Apple CEO}
@@ -157,7 +161,7 @@ Figure \ref{fig:cloud_stack} shows the three main service models and the respons
 
 \begin{figure}[h]
 	\centering
-		\includegraphics[width=0.8\textwidth]{graphics/service_models.eps}
+		\includegraphics{graphics/service_models.eps}
 	\caption{Service models\cite{trustedcloudcomputing}}
 	\label{fig:cloud_stack}
 \end{figure}
@@ -190,16 +194,24 @@ Since there is no strict separation between the stated service models, there exi
 \end{itemize}
 
 \section{Internet of Things}
-\section{IoT}
 
-The Internet of Things, a term initially coined at the AutoID labs at the Massachusetts Institute of Technology (MIT), describes the vision that virtually all objects become smart and connected [2, 18].
-\todo{further intro}
-\url{https://www.researchgate.net/profile/Markus_Weinberger2/publication/308130091_IoT_business_models_in_an_industrial_context/links/57df8bfa08ae72d72eac2962.pdf}
+When looking at the past, a clear separation of digital and physical industries can be observerd. Since 1990, the Internet gave new opportunities to non-digital industries by creating new business models. Around 2005, the term ``Web 2.0'' came up as a summarization for Social Media, Open Source, Crowdsourcing, etc, allowing users to contribute to content in the Internet. With ``Web 3.0'' (around 2015), the concept of the ``Internet of Things (IoT)'' was introduced with new business models like ``Digitally Charged Products'' or ``Sensor as a Service'' \cite{iotfleisch}.
+
+The Internet of Things introduces hybrid solutions that merge physical objects and digital services, with the vision to connect every object and location to the Internet. To fullfill this task, objects are equipped with computational intelligence (computers) that can be access over the Internet (or other objects) to read and write information from and to a physical object. The object itself is called a ``Thing'', hence the Name ``Internet of Things'' and is now a composition of both the physical and digital world \cite{iotfleisch}.
+
+By adding computational intelligence to a physical object, the value of the ``Thing'' is increased in many ways. From an academic view, the value creation can be seen as five layers called the ``Value-creation Layers'' and will be explained in the next section \cite{iotfleisch}.
+
 \url{https://www.alexandria.unisg.ch/236057/1/2090_EN_Bosch%20Lab%20White%20Paper%20GM%20im%20IOT%201_2.pdf}
-\subsection{Value Layers}
-\todo{picture}
+\subsection{Value-creation Layers}
 
-The following enumerations explains the five layers used in an IoT environment in detail\cite{iotfleisch}.
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.5]{graphics/iot_layers.eps}
+	\caption{Value-creation Layers\cite{iotfleisch}}
+	\label{fig:value_creation_layers}
+\end{figure}
+blub bub blbu
+The following enumerations explains the five layers used in an IoT environment in detail \cite{iotfleisch}.
 
 \subsubsection{Layer 1: Physical thing}
 On this layer, the physical object that can directly respond to a customer is described. The thing, e.g. a lightbulb, is bound to a physical location.
@@ -216,3 +228,8 @@ In this layer, the collected data from the sensors are collected and stored for 
 \subsubsection{Layer 5: Digital service}
 This layer combines all the previous layers and offers a functionality as a digital service. E.g. a mobile application with world-wide access to control the lightbulb.
 
+\subsection{Comparision with 'Industrial Internet of Things'}
+
+\subsection{Comparision with 'Industry 4.0'}
+
+\subsection{Impact on this thesis}
