@@ -46,9 +46,10 @@
 \contentsline {subsubsection}{Layer 3: Connectivity}{15}{section*.26}
 \contentsline {subsubsection}{Layer 4: Analytics}{15}{section*.27}
 \contentsline {subsubsection}{Layer 5: Digital service}{15}{section*.28}
-\contentsline {subsection}{\numberline {3.3.2}Comparision with 'Industrial Internet of Things'}{15}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Comparision with 'Industry 4.0'}{15}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Impact on this thesis}{15}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.2}Business model patterns}{15}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Comparision with 'Industrial Internet of Things'}{15}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Comparision with 'Industry 4.0'}{15}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Impact on this thesis}{15}{subsection.3.3.5}
 \contentsline {chapter}{\chapternumberline {4}System Design}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}Requirements}{17}{section.4.1}
 \contentsline {section}{\numberline {4.2}System Overview}{17}{section.4.2}

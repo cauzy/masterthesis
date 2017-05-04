@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=latex 2014.3.3)  4 MAY 2017 15:28
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=latex 2014.3.3)  4 MAY 2017 16:03
 entering extended mode
 **thesis.tex
 (D:\masterthesis\thesis.tex
@@ -1726,24 +1726,22 @@ Overfull \hbox (251.88551pt too wide) in paragraph at lines 204--205
 
 [13]
 File: graphics/iot_layers.eps Graphic file (type eps)
- <graphics/iot_layers.eps>
-Underfull \vbox (badness 1668) has occurred while \output is active []
+ <graphics/iot_layers.eps> [14]) [15] [16
 
- [14]) [15] [16
-
-]
-(D:\masterthesis\chapters/sysdesign.tex [17] [18]) [19] [20
-
-] (D:\masterthesis\chapters/simulation.tex) [21] [22
+] (D:\masterthesis\chapters/sysdesign.tex [17] [18]) [19] [20
 
 ]
-(D:\masterthesis\chapters/impl.tex) [23] [24
+(D:\masterthesis\chapters/simulation.tex) [21] [22
 
-] (D:\masterthesis\chapters/eval.tex) [25] [26
+] (D:\masterthesis\chapters/impl.tex) [23] [24
+
+]
+(D:\masterthesis\chapters/eval.tex) [25] [26
 
 ] (D:\masterthesis\thesis.lof) (D:\masterthesis\thesis.lot) [27] [28
 
-] (D:\masterthesis\thesis.loa) (D:\masterthesis\thesis.ind)
+]
+(D:\masterthesis\thesis.loa) (D:\masterthesis\thesis.ind)
 No file thesis.gls.
 No file thesis.acr.
 (D:\masterthesis\thesis.bbl [29] [30
@@ -1792,9 +1790,6 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  25265 strings out of 493922
@@ -1805,4 +1800,4 @@ Here is how much of TeX's memory you used:
  841 hyphenation exceptions out of 8191
  62i,15n,97p,1941b,1958s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on thesis.dvi (48 pages, 124756 bytes).
+Output written on thesis.dvi (48 pages, 126124 bytes).

@@ -204,32 +204,37 @@ By adding computational intelligence to a physical object, the value of the ``Th
 \url{https://www.alexandria.unisg.ch/236057/1/2090_EN_Bosch%20Lab%20White%20Paper%20GM%20im%20IOT%201_2.pdf}
 \subsection{Value-creation Layers}
 
+Figure \ref{fig:value_creation_layers} shows the five layers of value-creation within the Internet of Things. To get a better understanding of what the five layers are responsible for, a smart lightbulb is used as an example.
+
 \begin{figure}[h]
 	\centering
 		\includegraphics[scale=0.5]{graphics/iot_layers.eps}
 	\caption{Value-creation Layers\cite{iotfleisch}}
 	\label{fig:value_creation_layers}
 \end{figure}
-blub bub blbu
-The following enumerations explains the five layers used in an IoT environment in detail \cite{iotfleisch}.
 
 \subsubsection{Layer 1: Physical thing}
-On this layer, the physical object that can directly respond to a customer is described. The thing, e.g. a lightbulb, is bound to a physical location.
+This layers describes the physical thing, e.g. a lightbulb. A thing is always bound to a location and has a direct benefit for the user (e.g. serving light). Since the location is fixed, it can only act in an immediate environment.
 
 \subsubsection{Layer 2: Sensor/Actuator}
-In layer 2, the physical thing gets intelligence by adding a processing unit (e.g. a microcontroller) to it. Sensors measure parameters of the environment (e.g. if a person is in the room) and actuators provide services to interact with the thing or the environment (e.g. switch the lightbulb on or off).
+Layer 2 adds sensor and actuator elements to the thing. By adding a minicomputer to the physical object, the sensors can measure data and the actuators can deliver local services. In the proposed example, the sensor could measure the presense of a person and then switch of the lightbulb.
 
 \subsubsection{Layer 3: Connectivity}
-This layer connects the physical thing and the sensors/actuators to the Internet. Within this layer the device gets accessible via the Internet by, for example, a radio module that is connected to the local wireless network.
+This layer connects the physical thing and the sensors/actuators to the Internet. Within this layer the device gets accessible via the Internet by, for example, a radio module that is connected to the local wireless network. By using modern technologies, this step can be done at marginal costs.
 
 \subsubsection{Layer 4: Analytics}
-In this layer, the collected data from the sensors are collected and stored for further processing. Additional web services can be integrated to generate actions for the actuators or add additional information to the sensor data. In this layer and additional value is added to the 'stupid' thing.
+In this layer, the collected data from the sensors are collected and stored for further processing (e.g. plausibility checks or classification). Additional web services can be integrated to generate actions for the actuators or add additional information to the sensor data. Usually this is achieved by using a cloud system. In this layer and additional value is added to the ``stupid'' thing. In the example this layer could derive motion patterns from the lightbulb.
 
 \subsubsection{Layer 5: Digital service}
-This layer combines all the previous layers and offers a functionality as a digital service. E.g. a mobile application with world-wide access to control the lightbulb.
+This layer combines all the previous layers and offers a functionality as a digital service. As an example, the lightbulb could be exposed to users all over the world via a wegbsite or a mobile application. On this layers new digital business model patterns can be applied.
+
+By applying the previous layers to a physical object, the value of the thing is more than the sum of its parts. Connectivity to the Internet nowadays can be made at small costs. One important thing is, that the layers are not independent of each other. The flow of information has to pass the five layers always in both directions in order to ensure the additional value of the product.
+
+\subsection{Business model patterns}
 
 \subsection{Comparision with 'Industrial Internet of Things'}
 
 \subsection{Comparision with 'Industry 4.0'}
 
-\subsection{Impact on this thesis}
+\subsection{Impact on the thesis}
+\todo{better title}
