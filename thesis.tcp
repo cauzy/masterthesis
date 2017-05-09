@@ -7,6 +7,6 @@ MainFile=thesis.tex
 UseBibTeX=0
 UseMakeIndex=0
 ActiveProfile=LaTeX ⇨ DVI ⇨ PDF
-ProjectLanguage=de
-ProjectDialect=DE
+ProjectLanguage=en
+ProjectDialect=US
 

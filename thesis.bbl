@@ -12,12 +12,12 @@
   {S}pannungsqualität, 11 2009.
 
 \bibitem{sig_proc}
-Sophocles Orfanidis.
+O.~Sophocles.
 \newblock {\em Introduction to Signal Processing}.
 \newblock Prentice Hall, 1995.
 
 \bibitem{sampling}
-A.M. Wyglinski, A.M.W. Di~Pu, and D.~Pu.
+A~Wyglinski, A.~Di~Pu, and D.~Pu.
 \newblock {\em Digital Communication Systems Engineering with Software-Defined
   Radio}.
 \newblock Artech House Publishers, 2013.
@@ -41,13 +41,13 @@ M.~Meyer.
 \newblock Springer Science+Business Media, 2006.
 
 \bibitem{cloud_characteristics}
-Zaigham Mahmood.
+Zaigham M.
 \newblock {Cloud Computing: Characteristics and Deployment Approaches}.
 \newblock In {\em Computer and Information Technology (CIT), 2011 IEEE 11th
   International Conference on}, pages 121--126, Aug 2011.
 
 \bibitem{nist}
-Peter Mell and Timothy Grance.
+P.~Mell and T.~Grance.
 \newblock The {NIST} definition of cloud computing.
 \newblock {\em National Institute of Standards and Technology (NIST),
   Information Technology Laboratory}, NIST Special Publication 800-145,
@@ -55,7 +55,7 @@ Peter Mell and Timothy Grance.
 \newblock {\url{http://www.csrc.nist.gov}, Online, accessed 24-April-2014}.
 
 \bibitem{trustedcloudcomputing}
-Kai Hwang and Deyi Li.
+K.~Hwang and D.~Li.
 \newblock Trusted cloud computing with secure resources and data coloring.
 \newblock {\em IEEE Internet Computing}, 14(5):14--22, September 2010.
 
@@ -78,6 +78,24 @@ E.~Fleisch, M.~Weinberger, and F.~Wortmann.
 \newblock In {\em {Interoperability and Open-Source Solutions for the Internet
   of Things}}, pages 6--10. Springer, 2015.
 
+\bibitem{iotfleisch2}
+M.~Weinberger, D.~Bilgeri, and E.~Fleisch.
+\newblock {IoT} business models in an industrial context.
+\newblock {\em at-Automatisierungstechnik}, 64(9):699--706, 2016.
+
+\bibitem{iiot}
+A.~Sadeghi, C.~Wachsmann, and M.~Waidner.
+\newblock Security and privacy challenges in industrial internet of things.
+\newblock In {\em Design Automation Conference (DAC), 2015 52nd ACM/EDAC/IEEE},
+  pages 1--6. IEEE, 2015.
+
+\bibitem{iiot2}
+H.~Wang, O.~Osen, G.~Li, W.~Li, H.~Dai, and W.~Zeng.
+\newblock Big data and industrial internet of things for the maritime industry
+  in northwestern norway.
+\newblock In {\em TENCON 2015-2015 IEEE Region 10 Conference}, pages 1--5.
+  IEEE, 2015.
+
 \bibitem{dcf77}
 D.~Engeler.
 \newblock {Performance analysis and receiver architectures of DCF77
@@ -86,12 +104,12 @@ D.~Engeler.
   Transactions on}, 59(5):869--884, May 2012.
 
 \bibitem{dcf77_2}
-Dirk Piester, Peter Hetzel, and Andreas Bauch.
+D.~Piester, P.~Hetzel, and A.~Bauch.
 \newblock {Zeit- und Normalfrequenzverbreitung mit DCF77}.
 \newblock In {\em PTB-Mitteilungen vol. 114 (Heft 4)}, pages 345--368, 2004.
 
 \bibitem{dcf77_3}
-{B. Rega}.
+{Rega, B.}
 \newblock {Genauigkeitsvergleich DCF77 und GPS}.
 \newblock \url{http://www.hopf.com/de/dcf77-gps_de.html}.
 \newblock {Online; accessed 07-May-2014}.
