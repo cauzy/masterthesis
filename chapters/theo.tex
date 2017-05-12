@@ -75,6 +75,7 @@ For the sake of completeness, 'Window functions' have to be taken into account. 
 
 A common implementation of the FFT algorithm is the recursive version of Cooley and Tukey. The complex signal input array is splitted in two arrays. One with the even indices, one with the odd indices. After that, the function is called again on this two arrays until the length of the input array is less or equal 1. After the recursion returns, the calculation of the frequency-domain data is made by appliying .... \todo{cite}
 
+\begin{algorithm}
 \lstset{language=C++, caption={Recursive Cooley-Tukey FFT algorithm}, label={cooley_tukey_impl}, numberstyle=\footnotesize,
 								basicstyle=\ttfamily,
                 keywordstyle=\color{blue}\ttfamily,
@@ -116,6 +117,8 @@ private void CalculateFFT(ref Complex[] signal)
 	}
 }
 \end{lstlisting}
+\end{algorithm}
+
 \todo{cite}
 \section{Cloud Computing}
 
@@ -276,18 +279,106 @@ By the use of security, privacy and standardization concepts, IIoT provides a so
 \subsection{Security concerns}
 
 \subsection{IoT protocols}
+While there are stable and grown concepts for building IoT devices by using existing technologies, IoT protocols are still developing. When looking at communication technologies for IoT or IIoT devices, mostly wireless transmission modes are used. Common examples are Zigbee, WiFI or Bluetooth. All this technologies allow smart devices to connect to the Internet for submitting data to web servers or cloud-based services\cite{iotprotocols}.
+
+By choosing the right protocol for an application, the (probably) limited resources of a smart device have to be taken into account. Parameters like computational power, power supply (battery) and network bandwidth have a big impact on the decision\cite{iotprotocols}.  
+
+When looking at such IoT endpoints two services can be seen often\cite{iotprotocols}:
+
+\begin{enumerate}
+	\item APIs that can a user of such an infrastructure can use to read data from the devices.
+	\item Asynchronous nodes that can be used for communication between devices and end-user applications.
+\end{enumerate}
+
+The following sections should give a short overview about the currently common used Internet-of-Things protocols\cite{iotprotocols}.
 
 \subsubsection{CoAP}
+The Constrained Application Protocol is a protocol suitable for constrained-devices (devices with limited network access or battery powered devices). It uses a subset of the HTTP methods (GET, POST, PUT and DELETE) for a synchronous and asynchronous request/response communication
+
+As base technology, CoAP uses UDP because of the less overhead compared to TCP. To ensure reliability the protocol has a two bits header field in each packet that defines the desired Quality of Service (QoS) level:
+
+\begin{enumerate}
+	\item Confirmable: A message must be acknowledged either synchronously or asynchronously with an ACK.
+	\item Non-Confirmable: A message needs not to be acknowledged.
+	\item Acknowledgment: The acknowledge message for a request has has to be acknowledged.
+	\item Reset: A message stating that a request could not be processed.
+\end{enumerate}
+
+CoAP does not include any build-in security, thus Datagram Transport Layer Security (DTLS) can be used. DTLS for UDP follows the same principle than TLS or SSL for TCP \todo{ref}. Other ways to secure a CoAP connection are available but not stated here.
 
 \subsubsection{MQTT}
+The Message Queue Telemetry Transport is a protocol really suitable for IoT applications. It supports asynchronous publish/subscribe mechanism over TCP.
+
+In an MQTT environment a broker (server in a traditional context) provides topis that can be consumed by clients. A client can subscribe and unsubscribe from a topic and hence gets updated if a new message for this topic is available. This mechanism makes it useful for devices with limited resources.
+
+MQTT allows three QoS levels to ensure reliability:
+
+\begin{enumerate}
+	\item Fire and forget: A message is sent only once and an acknowledgment is not needed.
+	\item Deliver at least once: A message is sent at least once, furthermore, an acknowledgment of this message is needed.
+	\item Deliver exactly once: By using a four-way handshake the delivery of the message exactly one time is ensured.
+\end{enumerate}
+
+For security concerns, TLS or SSL on top of TCP can be used to encrypt message.
 
 \subsubsection{XMPP}
+The Extensible Messaging and Presence Protocol, a quite old protocol originally developed for chatting, can also be used for IoT communication. On top of TCP, it provides asynchronous publish/subscribe and also synchronous request/response messaging. XMPP can be used for near real-time communication and can be extended by XMPP Extension Protocols (XEP) which makes it useable for different applications.
+
+Messages are transmitted as XML documents which introduces an additional overhead due to the structure and thus need more computational power on the smart device.
+
+QoS issues can not be captured by the protocol itself, security can be established by using TLS or SSL.
 
 \subsubsection{RESTFUL Services}
+Compared to the previous mentioned protocols, the Representational State Transfer, is an architectural style. REST is a very common approach in the Internet for consuming and providing APIs by using the HTTP methods GET, POST, PUT and DELETE. It uses synchronous request/response message that can be interpreted by nearly every common HTTP server.
+
+Messages are exchanged in the JSON format which makes it more lightweight compared to XML messages. Furthermore, all known HTTP mechanisms like cashing, authentication and content type negotiation can be used by REST.
+
+For security TLS or SSL can be applied. Due to the fact that TLS or SSL introduce additional overhead, unique authentication keys in every HTTP message header can be used to get a level of security.
 
 \subsubsection{AMQP}
+Advanced Message Queuing Protocol can make the use of different transport protocols on top of TCP. It provides asynchronous publish/subscribe messaging with a store-and-forward mechanism that ensure reliability. 
+
+Three different message-delivery guarantees can be applied to the messages:
+
+\begin{enumerate}
+	\item At most once: A message is send once, regardless if it is delivered or not.
+	\item At least once: A message is definitely send once (or more) and is delivered.
+	\item Exactly once: A message is definitely send once and is delivered.
+\end{enumerate}
+
+By using TCP, TLS or SSL can be applied to ensure security.
 
 \subsubsection{Websockets}
+Websockets, based on TCP, establish a session between the server and the client by a handshake. A Websocket connection is a HTTP connection until the handshake is done, after that the HTTP headers are removed and a asynchronous full-duplex connection is established. This mechanism reduces overhead of classic HTTP connection and provides a real-time connection between server and client.
+
+To use publish/subscribe concepts, the Websocket Application Messaging Protocol (WAMP) can be used. Again, TLS or SSL can be used to achieve a level of security.
+
+\subsubsection{Comparison}
+
+Table \ref{tab:IoTProctolComparison} sums up the relevant points for each previously described protocol:
+
+\begin{table}[h]
+	\centering
+		\begin{tabular}{c|c|c|c|c}
+			\hline
+			\textbf{Protocol} & \textbf{Transport} & \textbf{QoS} & \textbf{Architecture} & \textbf{Security} \\
+			\hline \hline
+			\textbf{CoAP} & UDP & \checkmark  & Request/Response & DTLS \\
+			\hline
+			\textbf{MQTT} & TCP & \checkmark & Publish/Subscribe & TLS or SSL \\
+			\hline
+			\textbf{XMPP} & TCP & - & \begin{tabular}[c]{@{}l@{}}Request/Response\\ Publish/Subscribe\end{tabular} & TLS or SSL \\
+			\hline
+			\textbf{REST} & HTTP (TCP) & - & Request/Response & HTTPS (TLS or SSL) \\
+			\hline
+			\textbf{AMQP} & TCP & \checkmark & Publish/Subscribe & TLS or SSL \\
+			\hline
+			\textbf{Websockets} & TCP & - & \begin{tabular}[c]{@{}l@{}}Client/Server\\ Publish/Subscribe\end{tabular} & TLS or SSL \\
+			\hline
+		\end{tabular}
+	\caption{IoT proctol comparison}
+	\label{tab:IoTProctolComparison}
+\end{table}
 
 \subsection{Impact on the thesis}
 \todo{better title}
