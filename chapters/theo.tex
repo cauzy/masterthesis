@@ -75,7 +75,6 @@ For the sake of completeness, 'Window functions' have to be taken into account. 
 
 A common implementation of the FFT algorithm is the recursive version of Cooley and Tukey. The complex signal input array is splitted in two arrays. One with the even indices, one with the odd indices. After that, the function is called again on this two arrays until the length of the input array is less or equal 1. After the recursion returns, the calculation of the frequency-domain data is made by appliying .... \todo{cite}
 
-\begin{algorithm}
 \lstset{language=C++, caption={Recursive Cooley-Tukey FFT algorithm}, label={cooley_tukey_impl}, numberstyle=\footnotesize,
 								basicstyle=\ttfamily,
                 keywordstyle=\color{blue}\ttfamily,
@@ -117,7 +116,6 @@ private void CalculateFFT(ref Complex[] signal)
 	}
 }
 \end{lstlisting}
-\end{algorithm}
 
 \todo{cite}
 \section{Cloud Computing}
@@ -355,7 +353,7 @@ To use publish/subscribe concepts, the Websocket Application Messaging Protocol 
 
 \subsubsection{Comparison}
 
-Table \ref{tab:IoTProctolComparison} sums up the relevant points for each previously described protocol:
+Table \ref{tab:IoTProctolComparison} sums up the relevant points for each previously described protocol\cite{iotprotocols}:
 
 \begin{table}[h]
 	\centering
