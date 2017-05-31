@@ -380,4 +380,8 @@ Table \ref{tab:IoTProctolComparison} sums up the relevant points for each previo
 \end{table}
 
 \subsection{Impact on the thesis}
-\todo{better title}
+For the proposed thesis, MQTT will be used as protocol for data exchange between the Power Quality Meters and the cloud. The publish/subscribe principle fits into the requirements for the developed system. The PQMs can publish measured data and one or more cloud endpoints can subscribe to this messages. Since MQTT is widely-used in IoT and IIoT environments, tools and libraries can be found for nearly every programming language.
+
+By the use of topics, different types of messages can be used: Status messages from the devices, measurement blocks, single measurements and to a limited amount (due to the protocol itself) streaming measurement data.
+
+Furthermore, security and QoS levels can be applied and examined in the simulation to develop a system that suits the needs for differnent environments (bandwidth, storage, etc.).
