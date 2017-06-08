@@ -34,6 +34,31 @@ In addition to the voltage harmonics, the total harmonic distortion (THD) has to
 
 \[ {THD} = \frac{\sqrt{\sum_{h=2}^{40} V_h^2}}{V_1} \cdot 100\% = \frac{\sqrt{V_2^2 + V_3^2 + V_4^2 + \dots + V_{40}^2}}{V_1} \cdot 100\% \]
 
+\subsubsection{Summary}
+Table \ref{tab:pqmparameters} summarizes all parameters that has to be observed by the proposed system.
+
+\begin{table}[h]
+	\centering
+		\begin{tabular}{l|l|l}
+			\hline
+			\textbf{Parameter} & \textbf{Description} & \textbf{Number of values} \\
+			\hline \hline
+			$U_{eff}$ & Effective value & 1 \\
+			\hline
+			$f_0$ & Frequency & 1 \\
+			\hline
+			$V_0 ... V_{25}$ & Voltage harmonics & 25 \\
+			\hline
+			$THD$ & Total harmonic distortion & 1 \\
+			\hline
+			\hline
+			\multicolumn{2}{l|}{\textbf{Total}} & \textbf{28} \\
+			\hline
+		\end{tabular}
+	\caption{PQM parameters}
+	\label{tab:pqmparameters}
+\end{table}
+
 \subsection{Measuring Electric Characteristics}
 \todo{better title}
 
@@ -43,15 +68,22 @@ To calculate the selected power quality characteristics, the voltage of the powe
 In the proposed scenario, a ADC with a $R$ = $\pm$ 1200 V = 2400 V and $B$ = 24 bits is used. This results in the following quantization resolution:
 \[ Q = \frac{2400 \; V}{2^{24} \; bits} = 0.000143 \; V \approx 143 \; \mu V \]
 \newline
-Beside having a efficient quantization resolution, choosing the right sample rate is crucial. In order to reconstruct the measured signal, the time between two sample has to be chosen in a manner that on the one hand, unnecessary often taken samples of the same signal level are generated (oversampling) and on the other hand, not too less samples are taken such that the original signal cannot be reconstructed (undersampling)\cite{sig_proc}. To avoid undersampling, the Nyquist sampling theorem has to be applied: Taken a real signal, that is bandlimited to $B$ Hz (only signals with a frequency below $B$ Hz are sampled), can be reconstructed without errors with the frequency $R$, described by the following formula\cite{sampling}:
+Beside having a efficient quantization resolution, choosing the right sample rate is crucial. In order to reconstruct the measured signal, the time between two sample has to be chosen in a manner that on the one hand, unnecessary often taken samples of the same signal level are generated (oversampling) and on the other hand, not too less samples are taken such that the original signal cannot be reconstructed (undersampling)\cite{sig_proc}. To avoid undersampling, the Nyquist sampling theorem has to be applied: Taken a real signal, that is band-limited to $B$ Hz (only signals with a frequency below $B$ Hz are sampled), can be reconstructed without errors with the frequency $R$, described by the following formula\cite{sampling}:
 \[R > 2 \cdot B\]
 \newline
-In the proposed scenario, we examine total harmonic distortion up to the $40^{th}$ order or harmonics. According to the standard, the maximal allowed frequency is 50 Hz + 1\% = 50.5 Hz. Therefore, the $40^{th}$ harmonic has a frequency of at most 2020 Hz. The signal is bandlimited by a lowpass filter to $B$ = 5000 Hz. According to the Nyquist sampling theorem, the sample frequency has to be set to at least $R > 2 \cdot B = 10000$ Hz. Hence, the sample frequency of the measurement device used to evaluate the scenario is set to 20000 Hz.
+In the proposed scenario, we examine total harmonic distortion up to the $40^{th}$ order or harmonics. According to the standard, the maximal allowed frequency is 50 Hz + 1\% = 50.5 Hz. Therefore, the $40^{th}$ harmonic has a frequency of at most 2020 Hz. The signal is band-limited by a lowpass filter to $B$ = 5000 Hz. According to the Nyquist sampling theorem, the sample frequency has to be set to at least $R > 2 \cdot B = 10000$ Hz. Hence, the sample frequency of the measurement device used to evaluate the scenario is set to 20000 Hz.
 
 \subsection{Transformation from Time- to Frequency Domain}
-
 \label{fft}
 Since a great number of important characteristics of the power quality depends on measuring the frequency (and it's components) on a power line, the transformation form a signal recorded in the time domain to it's frequency parts shall be discussed.
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.6]{graphics/fft.eps}
+	\caption{Fast Fourier transformation}
+	\label{fig:fft}
+\end{figure}
+
 The most important method used for transformation is the Fourier transform. By using the Fourier analysis, a signal can be represented by its sinusoidal waveforms. In other words, the output of the Fourier analysis shows the amplitude and phase (cosine and sine components) at every frequency of the original signal. The conversation of a signal from the time- to the frequency-domain can be represented by the Discrete Fourier Transform (DFT). The input for the DFT is a signal of $N$ points and can be calculated using the following formula\cite{fourier}:
 \[ X(k) = \frac{1}{N} \sum_{n=0}^{N-1} x(n) e^{-j \frac{2 \pi}{N} nk} \]
 

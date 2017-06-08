@@ -1,6 +1,32 @@
 \section{Requirements}
 
 \section{System Overview}
+Table \ref{tab:pqmparameters} summarizes the 28 PQM parameters that has to be processed in the proposed system. To monitor this parameters, each PQM system has to have a sample rate of 20 kHz. To reduce data, every ten seconds the power line signal is captured for one second.
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.45]{graphics/sysdesign.eps}
+	\caption{Signal capturing}
+	\label{fig:sysdesign}
+\end{figure}
+
+
+According to this properties, three different types of data processing can be derived:
+
+\begin{enumerate}
+	\item Capture data on device, upload raw signal to the cloud for processing
+	\item Capture data on device, process data on device, upload results to the cloud
+	\item Option 2 with \textit{Dynamic Monitoring Frequency Scaling}
+\end{enumerate}
+
+Assuming that every parameter is transferred over the network as double number (8 Byte) and that every measurement has a prepended timestamp (also double), following assumptions can be derived for the needed bandwidth:
+
+\todo{alles falsch!!!!!!!!!!}
+\begin{enumerate}
+	\item Timestamp + Signal = 16 Bytes, 20 kHz sample rate \\ $\Rightarrow$ 312.5 kB/s $\Rightarrow$ 31.25 kB/10s \textit{$\Rightarrow$ 2.57 GB/d}
+	\item Timestamp + 28 Values = 232 Bytes, 20 kHz sample rate \\ $\Rightarrow$ 4.425 MB/s
+\end{enumerate}
+
 
 \section{Hardware Architecture}
 

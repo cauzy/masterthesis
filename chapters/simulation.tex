@@ -43,28 +43,26 @@ Modifications of the above mentioned parameters have an effect to the following 
 	\item Server side throughput
 \end{itemize}
 
-The following table shows the expected results of the simulation:
+Table \ref{tab:SimulationResults} shows the expected results of the simulation:
 
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
 \begin{table}[h]
 \centering
 \begin{tabular}{l|c|c|c|c}
 \hline
 \multicolumn{1}{l|}{\multirow{2}{*}{\textbf{Parameter}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{Modification}}} & \multicolumn{3}{c}{\textbf{Impact}}                                                                                                  \\ \cline{3-5} 
 \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{\textbf{Bandwidth}} & \multicolumn{1}{c|}{\textbf{Server storage}} & \multicolumn{1}{c}{\textbf{Throughput}} \\ \hline \hline
-\multirow{2}{*}{\textbf{Bandwidth}} & $\ominus$ & $\ominus$ & - & - \\
+\multirow{2}{*}{\textbf{Bandwidth}} & \cellcolor{green} & \cellcolor{green} &\cellcolor{yellow}&\cellcolor{yellow}\\
 \cline{2-5} 
-                                                         & $\oplus$                                                           & $\oplus$                                       & -                                                 & -                                       \\ \hline
-\multirow{2}{*}{\textbf{Number of PQM meters}}           & $\ominus$                                                           & $\ominus$                                       & $\ominus$                                                 & $\oplus$                                       \\ \cline{2-5} 
-                                                         & $\oplus$                                                           & $\oplus$                                       & $\oplus$                                                 & $\ominus$                                       \\ \hline
-\multirow{2}{*}{\textbf{Number of Webservices}}          & $\ominus$                                                           & -                                       & -                                                 & $\ominus$                                       \\ \cline{2-5} 
-                                                         & $\oplus$                                                           & -                                       & -                                                 & $\oplus$                                       \\ \hline
-\multirow{2}{*}{\textbf{Transmitted Data}}               & $\ominus$                                                           & $\ominus$                                       & $\ominus$                                                 & $\oplus$                                       \\ \cline{2-5} 
-                                                         & $\oplus$                                                           & $\oplus$                                       & $\oplus$                                                 & $\ominus$                                       \\ \hline
-\multirow{3}{*}{\textbf{Server side storage}}            & File                                                        & -                                       & ?                                                 & -                                       \\ \cline{2-5} 
-                                                         & SQL                                                         & -                                       & ?                                                 & -                                       \\ \cline{2-5} 
-                                                         & NoSQL                                                       & -                                       & ?                                                 & -                                       \\ \hline
+                                                         & \cellcolor{red}                                                           & \cellcolor{red}                                       &\cellcolor{yellow}                                                &\cellcolor{yellow}                                      \\ \hline
+\multirow{2}{*}{\textbf{Number of PQM meters}}           & \cellcolor{green}                                                           & \cellcolor{green}                                       & \cellcolor{green}                                                 & \cellcolor{red}                                       \\ \cline{2-5} 
+                                                         & \cellcolor{red}                                                           & \cellcolor{red}                                       & \cellcolor{red}                                                 & \cellcolor{green}                                       \\ \hline
+\multirow{2}{*}{\textbf{Number of web services}}          & \cellcolor{green}                                                           &\cellcolor{yellow}                                      &\cellcolor{yellow}                                                & \cellcolor{green}                                       \\ \cline{2-5} 
+                                                         & \cellcolor{red}                                                           &\cellcolor{yellow}                                      &\cellcolor{yellow}                                                & \cellcolor{red}                                       \\ \hline
+\multirow{2}{*}{\textbf{Transmitted Data}}               & \cellcolor{green}                                                           & \cellcolor{green}                                       & \cellcolor{green}                                                 & \cellcolor{red}                                       \\ \cline{2-5} 
+                                                         & \cellcolor{red}                                                           & \cellcolor{red}                                       & \cellcolor{red}                                                 & \cellcolor{green}                                       \\ \hline
+\multirow{3}{*}{\textbf{Server side storage}}            & File                                                        &\cellcolor{yellow}                                      & \cellcolor{purple}                                                 &\cellcolor{yellow}                                      \\ \cline{2-5} 
+                                                         & SQL                                                         &\cellcolor{yellow}                                      & \cellcolor{purple}                                                 &\cellcolor{yellow}                                      \\ \cline{2-5} 
+                                                         & NoSQL                                                       &\cellcolor{yellow}                                      & \cellcolor{purple}                                                 &\cellcolor{yellow}                                      \\ \hline
 \end{tabular}
 \caption{Simulation results}
 \label{tab:SimulationResults}
