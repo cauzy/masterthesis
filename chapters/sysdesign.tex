@@ -18,11 +18,20 @@ According to this properties, three different types of data processing can be de
 	\item Option 2 with \textit{Dynamic Monitoring Frequency Scaling}
 \end{enumerate}
 
-Assuming that every parameter is transferred over the network as double number (8 Byte) and that every measurement has a prepended timestamp (also double), following assumptions can be derived for the needed bandwidth (without protocol overhead):
+Figure \ref{fig:BinDataPacket} show the binary representation of the data packets that are transferred from a PQM system to the cloud.
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.4]{graphics/BinDataPacket.eps}
+	\caption{Binary data packet}
+	\label{fig:BinDataPacket}
+\end{figure}
+
+When looking at the data packet, following assumptions can be derived for bandwidth and cloud-side storage:
 
 \begin{enumerate}
-	\item Timestamp + Signal = 16 Bytes, 20 kHz sample rate \\ $\Rightarrow$ 312.5 kB/10s \textit{$\Rightarrow$ 2.57 GB/d}
-	\item Timestamp + 28 Values = 232 Bytes, 20 kHz sample rate \\ $\Rightarrow$ 232 B/10s \textit{$\Rigtharrow$ 1.91 MB/d}
+	\item StationID + Timestamp + Signal + CRC-16 = 20 Bytes, 20 kHz sample rate \\ $\Rightarrow$ 390.625 kB/10s \textbf{$\Rightarrow$ 3.219 GB/d}
+	\item Timestamp + 28 Values = 236 Bytes, 20 kHz sample rate \\ $\Rightarrow$ 236 B/10s \textbf{$\Rightarrow$ 1.94 MB/d}
 	\item todo ...
 \end{enumerate}
 
