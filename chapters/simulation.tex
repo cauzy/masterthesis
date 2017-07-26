@@ -2,7 +2,9 @@
 
 \section{Test Data}
 For testing purposes a set of prerecorded power data provided by the UK Energy Research Centre Energy Data Centre (UKERC-EDC) is used\cite{ukerc}.
-This test set contains various types of data including 16kHz recorded voltage and current values for a house in the UK, which will be used in the proposed thesis.
+This test set contains various types of data including 16 kHz recorded voltage and current values for a house in the UK, which will be used in the proposed thesis.
+
+In chapter \ref{electric_characteristics} the optimal sample rate for measuring power quality parameters was calculated to be 20 kHz. Although the test data set has a sample rate of only 16 kHz, it can be used for simulation purposes. The slower sample rates result in a loss of information in the upper harmonics which have no big impact on the simulation, especially on the amount of data that has to be transferred from the measurement devices to the cloud system.
 
 The recorded data is provided as flac-files\footnote{Free Lossless Audio Codec\cite{flac}}. Each file contains one hour of recording in a compressed format. The following procedure describes how to decode the values such that they can be used in the simulation environment.
 
@@ -15,7 +17,14 @@ The recorded data is provided as flac-files\footnote{Free Lossless Audio Codec\c
 	\end{enumerate}
 \end{enumerate}
 
-The wav-files holdsthe values for voltage and current as consecutive 32-Bit-Integer values. First value is voltage, second is current and so on. These values has to be multiplied with calibration factors (also provided in the data sets) to get the real values voltage and current. After this transformation, the values can be used in the simulation.
+The wav-files holds the values for voltage and current as consecutive 32-Bit-Integer values. First value is voltage, second is current and so on. These values has to be multiplied with calibration factors (also provided in the data sets) to get the real values for voltage and current. After this transformation, the values can be used in the simulation. Figure \ref{fig:test_data} shows an excerpt of the data after the transformation.
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.5]{graphics/testdata.eps}
+	\caption{Test data}
+	\label{fig:test_data}
+\end{figure}
 
 \section{Simulation Design}
 

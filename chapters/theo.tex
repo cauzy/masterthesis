@@ -60,6 +60,7 @@ Table \ref{tab:pqmparameters} summarizes all parameters that has to be observed 
 \end{table}
 
 \subsection{Measuring Electric Characteristics}
+\label{electric_characteristics}
 \todo{better title}
 
 To calculate the selected power quality characteristics, the voltage of the power line has to be monitored. In order to accomplish this task, the analog signal has to be digitized for further computational processing. The signal has to be sampled and each sample has to be quantized to a finite number of bits representing the sample in a digital way. The accuracy of the quantization process strongly depends on the number of bits that such an analog/digital converter (ADC) offers. Assume an ADC represents a sample by $B$ bits, the sample is transformed to a value in the range of $2^B$ bits, furthermore, the full-scale range $R$ has to be taken into account. As a result of this, the full-scale range $R$ is divided in $2^B$ steps and the resulting quantization with or quantization resolution can be represented using the following formula\cite{sig_proc}:
