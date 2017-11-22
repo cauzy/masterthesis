@@ -227,6 +227,8 @@ Since there is no strict separation between the stated service models, there exi
 	\item Business Process-as-a-Service
 \end{itemize}
 
+\subsection{Edge Computing}
+
 \section{Internet of Things}
 
 When looking at the past, a clear separation of digital and physical industries can be observed. Since 1990, the Internet gave new opportunities to non-digital industries by creating new business models. Around 2005, the term \q{Web 2.0} came up as a summarization for Social Media, Open Source, Crowd sourcing, etc, allowing users to contribute to content in the Internet. With \q{Web 3.0} (around 2015), the concept of the \q{Internet of Things (IoT)} was introduced with new business models like \q{Digitally Charged Products} or \q{Sensor as a Service}\cite{iotfleisch}.
@@ -306,6 +308,8 @@ By introducing the concept of \q{Industry 4.0} and the ongoing trend to use IoT 
 In industries, an ongoing trend of replacing programmable logic controllers (PLCs) by cyberphysical systems (CPDs) can be observed. A CPD is a programmable device that controls or monitors a physical process and is one of the fundamental building blocks of smart factories. Furthermore, this devices have to have a communication with other parts of the manufacturing process by closed internal networks, or the Internet\cite{iiot}.
 
 By the use of security, privacy and standardization concepts, IIoT provides a solution for smart factories. Further aspects like social or legal issues has to be taken into account by implementing IIoT devices\cite{iiot}.
+
+\subsection{Comparison with \q{Cloud/Edge Computing}}
 
 \subsection{Security concerns}
 \todo{chapter really needed?}
@@ -413,8 +417,31 @@ Table \ref{tab:IoTProctolComparison} sums up the relevant points for each previo
 \end{table}
 
 \subsection{Impact on the thesis}
-For the proposed thesis, MQTT will be used as protocol for data exchange between the Power Quality Meters and the cloud. The publish/subscribe principle fits into the requirements for the developed system. The PQMs can publish measured data and one or more cloud endpoints can subscribe to this messages. Since MQTT is widely-used in IoT and IIoT environments, tools and libraries can be found for nearly every programming language.
+\todo{MQTT for the thesis??}
+For the proposed thesis, MQTT will be used as protocol for data exchange between the Power Quality Meters and the cloud. The publish/subscribe principle fits into the requirements for the developed system. The PQMs can publish measured data and one or more cloud endpoints can subscribe to this messages. Since MQTT is widely-used in IoT and IIoT environments, tools and libraries can be found for nearly every programming language and platform.
 
-By the use of topics, different types of messages can be used: Status messages from the devices, measurement blocks, single measurements and to a limited amount (due to the protocol itself) streaming measurement data.
+With the concept of topics, like being used by publish/subscribe architectures, different types of messages can be send to a cloud system: Status messages from the devices, measurement blocks, single measurements and to a limited amount (due to the protocol itself) streaming measurement data.
 
-Furthermore, security and QoS levels can be applied and examined in the simulation to develop a system that suits the needs for differnent environments (bandwidth, storage, etc.).
+Furthermore, security and QoS levels can be applied and examined in the simulation to develop a system that suits the needs for different environments (bandwidth, storage, etc.).
+
+\section{Security Considerations}
+Since every Power Quality Monitoring unit is connected by either a intra- or internet with a cloud system, security considerations has to be taken into account when planning such a system. 
+
+When talking about information security the CIA triad, developed by the Information Systems Security Certification Consortium (ISC²), is a common model to evaluate security models and concepts\cite{cia_book}.
+
+CIA is an abbreviation of\cite{cia_book}:
+\begin{itemize}
+	\item Confidentiality: Data has to be protected from non authorized views and can be seen as a component of privacy.
+	\item Integrity: Data has to be protected from non authorized changes including deletion. If changes happen, the data needs to have possibilities to revert the changes.
+	\item Availability: Data has to be accessible when needed.
+\end{itemize}
+
+When bringing the CIA triad in relation to attacks, the following observations can be made\cite{cia_book}: 
+\begin{itemize}
+	\item Interception: This attack has the goal to gain non authorized access to data and is a threat to confidentiality.
+	\item Interruption: With this attack data become unusable or unavailable. Integrity, Availability are affected by this attack.
+	\item Modification: Integrity, Availability
+	\item Fabrication: Integrity, Availability
+\end{itemize}
+
+
